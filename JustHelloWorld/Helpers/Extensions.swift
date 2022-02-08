@@ -13,6 +13,11 @@ extension Color {
         return Color.init(red: .random(in: 1...255)/255, green: .random(in: 1...255)/255, blue: .random(in: 1...255)/255)
     }
 
+    static var blackAndWhiteRandom: Color {
+        let randomInt: Int = .random(in: 0...28)
+        return BlackAndWhiteColors.colorArray[randomInt]
+    }
+
     init(hexString: String) {
         var hex = hexString
         //Remove "#" if exists
@@ -41,5 +46,20 @@ extension Color {
 extension View {
     func getRect()->CGRect {
         return UIScreen.main.bounds
+    }
+}
+
+extension Text {
+    static var random: Text {
+        let randomInt: Int = .random(in: 0...107)
+        return Text.init(HelloWorldText.textArray[randomInt])
+    }
+
+    func colorChange(for givenText: NSString,into color: UIColor, from locationNumber: Int, to length: Int) -> NSMutableAttributedString{
+        let myString:NSString = givenText
+        var myMutableString = NSMutableAttributedString()
+        myMutableString = NSMutableAttributedString(string: myString as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Georgia", size: 18.0)!])
+        myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSRange(location: locationNumber,length: length))
+        return myMutableString
     }
 }

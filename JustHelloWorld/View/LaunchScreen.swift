@@ -13,7 +13,7 @@ struct LaunchScreen: View {
         ZStack {
             Color.init(red: 231/255, green: 145/255, blue: 21/255)
                 .ignoresSafeArea()
-            Image("JustHelloWorld-logos")
+            Image("JustHelloWorld-logos_transparent")
                 .resizable()
                 .scaledToFit()
         }

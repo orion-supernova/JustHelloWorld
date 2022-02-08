@@ -13,21 +13,11 @@ struct SettingsObject {
     var changeTextColor: Bool = true
     var changeTextLanguage: Bool = false
     var isAutomatic: Bool = false
+    var isBlackAndWhite: Bool = false
 }
+
 class SettingsViewModel: ObservableObject {
     @Published var settingsObject = SettingsObject()
-
-    func toggleBGColor() {
-    }
-    func toggleTextColor() {
-    }
-    func toggleSideMenuColor() {
-    }
-    func toggleLanguage() {
-    }
-    func toggleAtutomatic() {
-
-    }
 }
 
 

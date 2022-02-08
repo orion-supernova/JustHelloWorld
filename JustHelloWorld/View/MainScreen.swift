@@ -16,6 +16,8 @@ struct MainScreen: View {
     @State var randomLanguage  = false
     @State var isAutomatic  = false
 
+    @StateObject var viewmodel = SettingsViewModel()
+
     init() {
           UIScrollView.appearance().bounces = false
        }
@@ -25,10 +27,10 @@ struct MainScreen: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 ScrollViewReader { value in
                     HStack(spacing: 0) {
-                        SideMenu(randomBGColor: $randomBGColor, randomTextColor: $randomTextColor, randomLanguage: $randomLanguage, isAutomatic: $isAutomatic)
+                        SideMenu(viewmodel: viewmodel)
                             .frame(width: 220, height: getRect().maxY, alignment: .leading)
                             .id("sidemenu")
-                        HelloWorldView(randomBGColor: $randomBGColor, randomTextColor: $randomTextColor, randomLanguage: $randomLanguage, isAutomatic: $isAutomatic)
+                        HelloWorldView(viewmodel: viewmodel)
                             .frame(width: getRect().maxX, height: getRect().maxY)
                             .id("helloworldview")
                     }

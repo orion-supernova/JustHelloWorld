@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458C4E327B30AFF008FA00C /* AlertHelper.swift */; };
 		54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */; };
 		54AF657B27B1953300D118D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657A27B1953300D118D2 /* ContentView.swift */; };
 		54AF657D27B1953400D118D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF657C27B1953400D118D2 /* Assets.xcassets */; };
@@ -18,9 +19,12 @@
 		54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF659527B1B06900D118D2 /* SideMenu.swift */; };
 		54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B727B1B37600D118D2 /* HelloWorldView.swift */; };
 		54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */; };
+		54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */; };
+		54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5458C4E327B30AFF008FA00C /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		54AF657527B1953300D118D2 /* JustHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHelloWorldApp.swift; sourceTree = "<group>"; };
 		54AF657A27B1953300D118D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		54AF659527B1B06900D118D2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		54AF65B727B1B37600D118D2 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
 		54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldText.swift; sourceTree = "<group>"; };
+		54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWhiteColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				54AF658927B19FA100D118D2 /* Resources */,
+				54AF65BB27B2DE3B00D118D2 /* Model */,
 				54AF658A27B19FAB00D118D2 /* View */,
 				54AF658C27B19FC100D118D2 /* Helpers */,
 				54AF658B27B19FB300D118D2 /* Appfiles */,
@@ -118,8 +125,18 @@
 			children = (
 				54AF658727B19F2C00D118D2 /* ViewRouter.swift */,
 				54AF659127B1A88D00D118D2 /* Extensions.swift */,
+				5458C4E327B30AFF008FA00C /* AlertHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		54AF65BB27B2DE3B00D118D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */,
+				54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,12 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */,
+				54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */,
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
+				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
 				54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */,
@@ -338,19 +358,19 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -369,19 +389,19 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
