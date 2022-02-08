@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct HelloWorldView: View {
-    @State var color1 = Color.random
-    @State var color2 = Color.random
+    @State var bgColor = Color.random
+    @State var textColor = Color.random
+
+    @Binding var randomBGColor: Bool
+    @Binding var randomTextColor: Bool
+    @Binding var randomLanguage : Bool
+    @Binding var isAutomatic : Bool
 
     let textArray = [
         "Hello, world!","","","","","","","","","","","","","","","",
@@ -17,11 +22,11 @@ struct HelloWorldView: View {
     
     var body: some View {
         ZStack {
-            color1
+            bgColor
                 .ignoresSafeArea()
 
             Text("Hello, world!")
-                .foregroundColor(color2)
+                .foregroundColor(textColor)
                 .padding(5)
                 .font(.system(size: 80, weight: .bold, design: .monospaced))
                 .scaledToFit()
@@ -29,17 +34,18 @@ struct HelloWorldView: View {
                 .lineLimit(1)
         }
         .onTapGesture {
-            color1 = Color.init(hexString: "#002828")
-            color2 = Color.random
-        }
-        .onTapGesture(count: 3) {
-            print("TRIPLE TAP")
+            if randomBGColor {
+                bgColor = Color.random
+            }
+            if randomTextColor {
+                textColor = Color.random
+            }
         }
     }
 }
 
 struct HelloWorldView_Previews: PreviewProvider {
     static var previews: some View {
-        HelloWorldView()
+        HelloWorldView(randomBGColor: .constant(true), randomTextColor: .constant(true), randomLanguage: .constant(true), isAutomatic: .constant(true))
     }
 }

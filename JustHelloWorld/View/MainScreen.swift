@@ -11,6 +11,11 @@ struct MainScreen: View {
     @State private var xOffset = CGFloat.zero
     @State private var defaultOffset = CGFloat.zero
 
+    @State var randomBGColor = true
+    @State var randomTextColor = true
+    @State var randomLanguage  = false
+    @State var isAutomatic  = false
+
     init() {
           UIScrollView.appearance().bounces = false
        }
@@ -20,10 +25,10 @@ struct MainScreen: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 ScrollViewReader { value in
                     HStack(spacing: 0) {
-                        SideMenu()
-                            .frame(width: 200, height: getRect().maxY, alignment: .leading)
+                        SideMenu(randomBGColor: $randomBGColor, randomTextColor: $randomTextColor, randomLanguage: $randomLanguage, isAutomatic: $isAutomatic)
+                            .frame(width: 220, height: getRect().maxY, alignment: .leading)
                             .id("sidemenu")
-                        HelloWorldView()
+                        HelloWorldView(randomBGColor: $randomBGColor, randomTextColor: $randomTextColor, randomLanguage: $randomLanguage, isAutomatic: $isAutomatic)
                             .frame(width: getRect().maxX, height: getRect().maxY)
                             .id("helloworldview")
                     }

@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Color {
     static var random: Color {
-        return Color.init(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+        return Color.init(red: .random(in: 1...255)/255, green: .random(in: 1...255)/255, blue: .random(in: 1...255)/255)
     }
 
     init(hexString: String) {

@@ -17,6 +17,7 @@
 		54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF659127B1A88D00D118D2 /* Extensions.swift */; };
 		54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF659527B1B06900D118D2 /* SideMenu.swift */; };
 		54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B727B1B37600D118D2 /* HelloWorldView.swift */; };
+		54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		54AF659127B1A88D00D118D2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		54AF659527B1B06900D118D2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		54AF65B727B1B37600D118D2 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
+		54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				54AF658F27B19FDF00D118D2 /* MainScreen.swift */,
 				54AF65B727B1B37600D118D2 /* HelloWorldView.swift */,
 				54AF659527B1B06900D118D2 /* SideMenu.swift */,
+				54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
+				54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
