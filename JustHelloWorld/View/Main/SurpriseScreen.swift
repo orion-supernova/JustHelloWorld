@@ -9,43 +9,44 @@ import SwiftUI
 
 struct SurpriseScreen: View {
 
-    let timer = Timer.publish(every: 1,tolerance: 5, on: .main, in: .default).autoconnect()
-    @State var mainText = "5"
-    @State var countdown = 4
-    @State var font: CGFloat = 60
+    @State private var xOffset = CGFloat.zero
+    @State private var defaultOffset = CGFloat.zero
+
+    @State var randomBGColor = true
+    @State var randomTextColor = true
+    @State var randomLanguage  = false
+    @State var isAutomatic  = false
+
+    @StateObject var viewmodel = SurpriseScreenViewModel()
+
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
 
     var body: some View {
-        ZStack {
-            Color.black
-                .ignoresSafeArea()
-
-            Text(mainText)
-                .foregroundColor(Color.init(hexString: "00ff2b"))
-                .font(.system(size: font))
-                .onReceive(timer) { _ in
-                    mainText = "\(countdown)"
-                                if countdown > 0 {
-                                    countdown -= 1
-                                } else {
-                                    mainText = ""
-                                    for i in "..." {
-                                        mainText += "\(i)"
-                                        RunLoop.main.run(until: Date()+0.3)
-                                    }
-                                    font = 20
-                                    mainText = ""
-                                    for i in "Welcome to the Rabbit Hole." {
-                                        mainText += "\(i)"
-                                        RunLoop.main.run(until: Date()+0.12)
-                                    }
-
-                                    mainText = ""
-
-                                }
-                            }
+        GeometryReader { geo in
+            ScrollView(.horizontal, showsIndicators: false) {
+                ScrollViewReader { value in
+                    HStack(spacing: 0) {
+                        SideMenuForSurpriseScreen(viewmodel: viewmodel)
+                            .frame(width: 220, height: getRect().maxY, alignment: .leading)
+                            .id("sideMenuForSurpriseScreen")
+                        SurpriseScreenHelloWorldView(viewmodel: viewmodel)
+                            .frame(width: getRect().maxX, height: getRect().maxY)
+                            .id("surpriseScreenHelloWorldView")
+                    }
+                    .onAppear {
+                        value.scrollTo("surpriseScreenHelloWorldView")
+                    }
+                }
+            }
+            .allowsHitTesting(viewmodel.surpriseObject.isTouchEnabledForTopView)
+            .frame(width: getRect().maxX, height: getRect().maxY, alignment: .center)
+            .ignoresSafeArea()
         }
     }
 }
+
 
 struct SurpriseScreen_Previews: PreviewProvider {
     static var previews: some View {

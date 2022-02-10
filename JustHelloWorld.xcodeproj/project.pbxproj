@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */; };
+		5436EA8927B598350034AC04 /* SurpriseScreenHelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */; };
 		5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458C4E327B30AFF008FA00C /* AlertHelper.swift */; };
 		54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */; };
 		54AF657B27B1953300D118D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657A27B1953300D118D2 /* ContentView.swift */; };
@@ -18,7 +20,7 @@
 		54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF659127B1A88D00D118D2 /* Extensions.swift */; };
 		54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF659527B1B06900D118D2 /* SideMenu.swift */; };
 		54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B727B1B37600D118D2 /* HelloWorldView.swift */; };
-		54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */; };
+		54AF65BA27B275FE00D118D2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B927B275FE00D118D2 /* ViewModel.swift */; };
 		54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */; };
 		54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */; };
 		54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuForSurpriseScreen.swift; sourceTree = "<group>"; };
+		5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreenHelloWorldView.swift; sourceTree = "<group>"; };
 		5458C4E327B30AFF008FA00C /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		54AF657527B1953300D118D2 /* JustHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHelloWorldApp.swift; sourceTree = "<group>"; };
@@ -39,7 +43,7 @@
 		54AF659127B1A88D00D118D2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		54AF659527B1B06900D118D2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		54AF65B727B1B37600D118D2 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
-		54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		54AF65B927B275FE00D118D2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldText.swift; sourceTree = "<group>"; };
 		54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWhiteColors.swift; sourceTree = "<group>"; };
 		54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreen.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5436EA8527B5957C0034AC04 /* Inside Surprise Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */,
+				5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */,
+			);
+			name = "Inside Surprise Screen";
+			sourceTree = "<group>";
+		};
 		54AF656C27B1953300D118D2 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +161,7 @@
 				54AF658F27B19FDF00D118D2 /* MainScreen.swift */,
 				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
 				54E277A827B559AA00FEAFBD /* Inside MainScreen */,
+				5436EA8527B5957C0034AC04 /* Inside Surprise Screen */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -164,7 +178,7 @@
 		54E277A927B559D500FEAFBD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */,
+				54AF65B927B275FE00D118D2 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -252,6 +266,7 @@
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
+				5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
@@ -260,7 +275,8 @@
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
-				54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */,
+				54AF65BA27B275FE00D118D2 /* ViewModel.swift in Sources */,
+				5436EA8927B598350034AC04 /* SurpriseScreenHelloWorldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -436,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

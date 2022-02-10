@@ -12,6 +12,9 @@ extension Color {
     static var random: Color {
         return Color.init(red: .random(in: 1...255)/255, green: .random(in: 1...255)/255, blue: .random(in: 1...255)/255)
     }
+    static var matrixGreen: Color {
+        Color.init(hexString: "00ff2b")
+    }
 
     static var blackAndWhiteRandom: Color {
         let randomInt: Int = .random(in: 0...28)

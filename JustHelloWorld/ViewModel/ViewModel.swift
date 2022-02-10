@@ -20,5 +20,14 @@ class SettingsViewModel: ObservableObject {
     @Published var settingsObject = SettingsObject()
 }
 
+struct SurpriseObject {
+    var isInverted: Bool = false
+    var isTouchEnabledForTopView = false
+}
+
+class SurpriseScreenViewModel: ObservableObject {
+    @Published var surpriseObject = SurpriseObject()
+}
+
 
 
