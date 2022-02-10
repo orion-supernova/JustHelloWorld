@@ -16,6 +16,8 @@ struct ContentView: View {
             LaunchScreen()
         case .mainScreen:
             MainScreen()
+        case .surpriseScreen:
+            SurpriseScreen()
         }
     }
 }

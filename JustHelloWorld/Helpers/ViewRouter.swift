@@ -14,4 +14,5 @@ class ViewRouter: ObservableObject {
 enum Page {
     case launchScreen
     case mainScreen
+    case surpriseScreen
 }

@@ -21,6 +21,8 @@
 		54AF65BA27B275FE00D118D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */; };
 		54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */; };
 		54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */; };
+		54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */; };
+		54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		54AF65BC27B2DE5900D118D2 /* HelloWorldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldText.swift; sourceTree = "<group>"; };
 		54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWhiteColors.swift; sourceTree = "<group>"; };
+		54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreen.swift; sourceTree = "<group>"; };
+		54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 				54AF658927B19FA100D118D2 /* Resources */,
 				54AF65BB27B2DE3B00D118D2 /* Model */,
 				54AF658A27B19FAB00D118D2 /* View */,
+				54E277A927B559D500FEAFBD /* ViewModel */,
 				54AF658C27B19FC100D118D2 /* Helpers */,
 				54AF658B27B19FB300D118D2 /* Appfiles */,
 				54AF657E27B1953400D118D2 /* Preview Content */,
@@ -102,12 +107,8 @@
 		54AF658A27B19FAB00D118D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				54AF657A27B1953300D118D2 /* ContentView.swift */,
-				54AF658D27B19FD900D118D2 /* LaunchScreen.swift */,
-				54AF658F27B19FDF00D118D2 /* MainScreen.swift */,
-				54AF65B727B1B37600D118D2 /* HelloWorldView.swift */,
-				54AF659527B1B06900D118D2 /* SideMenu.swift */,
-				54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */,
+				54E277A727B5598100FEAFBD /* Main */,
+				54E277AE27B55CC000FEAFBD /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +138,43 @@
 				54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		54E277A727B5598100FEAFBD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				54AF657A27B1953300D118D2 /* ContentView.swift */,
+				54AF658D27B19FD900D118D2 /* LaunchScreen.swift */,
+				54AF658F27B19FDF00D118D2 /* MainScreen.swift */,
+				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
+				54E277A827B559AA00FEAFBD /* Inside MainScreen */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54E277A827B559AA00FEAFBD /* Inside MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				54AF65B727B1B37600D118D2 /* HelloWorldView.swift */,
+				54AF659527B1B06900D118D2 /* SideMenu.swift */,
+			);
+			path = "Inside MainScreen";
+			sourceTree = "<group>";
+		};
+		54E277A927B559D500FEAFBD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54AF65B927B275FE00D118D2 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54E277AE27B55CC000FEAFBD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +253,9 @@
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
+				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
+				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
