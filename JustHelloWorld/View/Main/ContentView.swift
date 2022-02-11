@@ -18,6 +18,10 @@ struct ContentView: View {
             MainScreen()
         case .surpriseScreen:
             SurpriseScreen()
+        case .matrixVideoScreen:
+            MatrixVideoScreen()
+        case .chatScreen:
+            LoginScreen()
         }
     }
 }

@@ -15,6 +15,7 @@ struct SurpriseScreenHelloWorldView: View {
     @State var invertedColors = false
     @State var viewTapgestureEnabled = false
     @State var isTexOnTheLeft = false
+    @State var lineLimit = 0
 
     @EnvironmentObject var viewRouter: ViewRouter
     @StateObject var viewmodel: SurpriseScreenViewModel
@@ -36,9 +37,9 @@ struct SurpriseScreenHelloWorldView: View {
                         .foregroundColor(viewmodel.surpriseObject.isInverted ? Color.black : Color.matrixGreen)
                         .padding()
                         .font(.system(size: fontSize, weight: .bold, design: .monospaced))
-                        .scaledToFit()
                         .minimumScaleFactor(0.01)
-                        .lineLimit(1)
+                        .lineLimit(lineLimit)
+                        .multilineTextAlignment(.leading)
                         .onAppear(perform: {
                             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                                 mainText = "\(countdown)"
@@ -51,6 +52,7 @@ struct SurpriseScreenHelloWorldView: View {
                                     var count = 0
                                     Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
                                         if count < 3 {
+                                            fontSize = 25
                                             mainText += "."
                                             count += 1
                                         } else {
@@ -58,8 +60,9 @@ struct SurpriseScreenHelloWorldView: View {
                                             count = 0
                                             var target = 0
                                             mainText = ""
-                                            fontSize = 20
+                                            fontSize = getRect().width == getSmallDeviceWidth() ? 16 : 20
                                             isTexOnTheLeft = true
+                                            lineLimit = 3
                                             let text = "Welcome to the Rabbit Hole."
                                             var charArray = [String]()
                                             for char in text {
@@ -74,9 +77,10 @@ struct SurpriseScreenHelloWorldView: View {
                                                     count = 0
                                                     charArray = []
                                                     timer.invalidate()
-                                                    isTexOnTheLeft = false
                                                     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                                                         fontSize = 80
+                                                        isTexOnTheLeft = false
+                                                        lineLimit = 1
                                                         mainText = "Hello, World!"
                                                         timer.invalidate()
                                                         viewTapgestureEnabled = true

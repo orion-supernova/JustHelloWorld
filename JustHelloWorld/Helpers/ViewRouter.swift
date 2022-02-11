@@ -15,4 +15,6 @@ enum Page {
     case launchScreen
     case mainScreen
     case surpriseScreen
+    case matrixVideoScreen
+    case chatScreen
 }

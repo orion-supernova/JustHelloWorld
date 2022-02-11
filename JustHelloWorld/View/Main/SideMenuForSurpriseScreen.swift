@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct SideMenuForSurpriseScreen: View {
-    @EnvironmentObject var viewrouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     @StateObject var viewmodel: SurpriseScreenViewModel
 
     var body: some View {
@@ -20,14 +21,25 @@ struct SideMenuForSurpriseScreen: View {
                 Color.matrixGreen
                     .ignoresSafeArea()
             }
-            Button {
-                withAnimation {
-                    viewrouter.currentPage = .mainScreen
+            VStack(spacing: 10) {
+                Button {
+                    withAnimation {
+                        viewRouter.currentPage = .mainScreen
+                    }
+                } label: {
+                    Text("Go Back")
+                        .foregroundColor(viewmodel.surpriseObject.isInverted ? Color.matrixGreen : Color.black)
+                        .font(.system(size:20, weight: .bold, design: .monospaced))
                 }
-            } label: {
-                Text("Go Back")
-                    .foregroundColor(viewmodel.surpriseObject.isInverted ? Color.matrixGreen : Color.black)
-                    .font(.system(size:20, weight: .bold, design: .monospaced))
+                Button {
+                    withAnimation {
+                        viewRouter.currentPage = .matrixVideoScreen
+                    }
+                } label: {
+                    Text("More!")
+                        .foregroundColor(viewmodel.surpriseObject.isInverted ? Color.matrixGreen : Color.black)
+                        .font(.system(size:20, weight: .bold, design: .monospaced))
+                }
             }
         }
         .onTapGesture {

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */; };
 		5436EA8927B598350034AC04 /* SurpriseScreenHelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */; };
+		5436EA8B27B641BE0034AC04 /* matrixAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */; };
+		5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */; };
+		5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */; };
+		5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9027B6446B0034AC04 /* LoginScreen.swift */; };
+		5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9227B65B320034AC04 /* CustomTextField.swift */; };
+		5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9427B65FA70034AC04 /* CustomSecureField.swift */; };
 		5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458C4E327B30AFF008FA00C /* AlertHelper.swift */; };
 		54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */; };
 		54AF657B27B1953300D118D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657A27B1953300D118D2 /* ContentView.swift */; };
@@ -30,6 +36,12 @@
 /* Begin PBXFileReference section */
 		5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuForSurpriseScreen.swift; sourceTree = "<group>"; };
 		5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreenHelloWorldView.swift; sourceTree = "<group>"; };
+		5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = matrixAnimation.mp4; sourceTree = "<group>"; };
+		5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerHelper.swift; sourceTree = "<group>"; };
+		5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixVideoScreen.swift; sourceTree = "<group>"; };
+		5436EA9027B6446B0034AC04 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		5436EA9227B65B320034AC04 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5436EA9427B65FA70034AC04 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		5458C4E327B30AFF008FA00C /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		54AF657527B1953300D118D2 /* JustHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHelloWorldApp.swift; sourceTree = "<group>"; };
@@ -64,8 +76,8 @@
 		5436EA8527B5957C0034AC04 /* Inside Surprise Screen */ = {
 			isa = PBXGroup;
 			children = (
-				5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */,
 				5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */,
+				5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */,
 			);
 			name = "Inside Surprise Screen";
 			sourceTree = "<group>";
@@ -113,6 +125,7 @@
 			children = (
 				54AF658627B1980E00D118D2 /* Info.plist */,
 				54AF657C27B1953400D118D2 /* Assets.xcassets */,
+				5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,9 +150,10 @@
 		54AF658C27B19FC100D118D2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				54AF658727B19F2C00D118D2 /* ViewRouter.swift */,
 				54AF659127B1A88D00D118D2 /* Extensions.swift */,
+				54AF658727B19F2C00D118D2 /* ViewRouter.swift */,
 				5458C4E327B30AFF008FA00C /* AlertHelper.swift */,
+				5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -159,9 +173,11 @@
 				54AF657A27B1953300D118D2 /* ContentView.swift */,
 				54AF658D27B19FD900D118D2 /* LaunchScreen.swift */,
 				54AF658F27B19FDF00D118D2 /* MainScreen.swift */,
-				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
 				54E277A827B559AA00FEAFBD /* Inside MainScreen */,
+				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
 				5436EA8527B5957C0034AC04 /* Inside Surprise Screen */,
+				5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */,
+				5436EA9027B6446B0034AC04 /* LoginScreen.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -169,8 +185,8 @@
 		54E277A827B559AA00FEAFBD /* Inside MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				54AF65B727B1B37600D118D2 /* HelloWorldView.swift */,
 				54AF659527B1B06900D118D2 /* SideMenu.swift */,
+				54AF65B727B1B37600D118D2 /* HelloWorldView.swift */,
 			);
 			path = "Inside MainScreen";
 			sourceTree = "<group>";
@@ -187,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */,
+				5436EA9227B65B320034AC04 /* CustomTextField.swift */,
+				5436EA9427B65FA70034AC04 /* CustomSecureField.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -249,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5436EA8B27B641BE0034AC04 /* matrixAnimation.mp4 in Resources */,
 				54AF658027B1953400D118D2 /* Preview Assets.xcassets in Resources */,
 				54AF657D27B1953400D118D2 /* Assets.xcassets in Resources */,
 			);
@@ -265,14 +284,19 @@
 				54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */,
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
+				5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */,
+				5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
+				5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */,
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
+				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
 				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
+				5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
 				54AF65BA27B275FE00D118D2 /* ViewModel.swift in Sources */,

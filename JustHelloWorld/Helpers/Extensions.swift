@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// MARK: - Color
 extension Color {
     static var random: Color {
         return Color.init(red: .random(in: 1...255)/255, green: .random(in: 1...255)/255, blue: .random(in: 1...255)/255)
@@ -46,12 +47,29 @@ extension Color {
     }
 }
 
+// MARK: - View
 extension View {
-    func getRect()->CGRect {
+    func getRect() -> CGRect {
         return UIScreen.main.bounds
     }
+    func getSmallDeviceWidth() -> CGFloat {
+        return 320
+    }
+    func getDeviceType() -> DeviceType? {
+        if getRect().width == 320 {
+            return .smallest
+        } else {
+            return .normal
+        }
+    }
+}
+enum DeviceType {
+    case smallest
+    case normal
+    case big
 }
 
+// MARK: - Text
 extension Text {
     static var random: Text {
         let randomInt: Int = .random(in: 0...107)
@@ -64,5 +82,11 @@ extension Text {
         myMutableString = NSMutableAttributedString(string: myString as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Georgia", size: 18.0)!])
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSRange(location: locationNumber,length: length))
         return myMutableString
+    }
+}
+// MARK: - UIApplication
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
