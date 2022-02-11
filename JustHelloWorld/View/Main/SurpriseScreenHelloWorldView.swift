@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct SurpriseScreenHelloWorldView: View {
     @State var mainText = "5"
@@ -47,26 +48,43 @@ struct SurpriseScreenHelloWorldView: View {
                                     timer.invalidate()
                                     fontSize = 30
                                     mainText = ""
-                                    for i in "..." {
-                                        mainText += "\(i)"
-                                        RunLoop.main.run(mode: .default, before: Date()+0.3)
-                                    }
-                                    isTexOnTheLeft = true
-                                    fontSize = 20
-                                    mainText = ""
-                                    for i in "Welcome to the Rabbit Hole." {
-                                        mainText += "\(i)"
-                                        RunLoop.main.run(mode: .default, before: Date()+0.12)
-                                    }
-                                    DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-                                        mainText = ""
-                                    }
-                                    DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-                                        mainText = "Hello, World!"
-                                        fontSize = 80
-                                        isTexOnTheLeft = false
-                                        viewTapgestureEnabled = true
-                                        viewmodel.surpriseObject.isTouchEnabledForTopView = true
+                                    var count = 0
+                                    Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
+                                        if count < 3 {
+                                            mainText += "."
+                                            count += 1
+                                        } else {
+                                            timer.invalidate()
+                                            count = 0
+                                            var target = 0
+                                            mainText = ""
+                                            fontSize = 20
+                                            isTexOnTheLeft = true
+                                            let text = "Welcome to the Rabbit Hole."
+                                            var charArray = [String]()
+                                            for char in text {
+                                                target += 1
+                                                charArray.append("\(char)")
+                                            }
+                                            Timer.scheduledTimer(withTimeInterval: 0.12, repeats: true) { timer in
+                                                if count < target {
+                                                    mainText += charArray[count]
+                                                    count += 1
+                                                } else {
+                                                    count = 0
+                                                    charArray = []
+                                                    timer.invalidate()
+                                                    isTexOnTheLeft = false
+                                                    Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                                                        fontSize = 80
+                                                        mainText = "Hello, World!"
+                                                        timer.invalidate()
+                                                        viewTapgestureEnabled = true
+                                                        viewmodel.surpriseObject.isTouchEnabledForTopView = true
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
