@@ -33,7 +33,7 @@ struct LoginScreen: View {
 
                 }
                 .onAppear {
-                    let text = "You are at the deepest place of the rabbit hole. If you want to connect with other awakens, please do!"
+                    let text = "If you take the exit, story ends. If you stay here and login, you should figure out the rest."
                     var charArray = [String]()
                     var target = 0
                     var count = 0
@@ -67,13 +67,10 @@ struct LoginScreen: View {
                                 .frame(width: getRect().width, height: 30)
                                 .foregroundColor(Color.matrixGreen)
 
-                            // MARK: - Password Field
-                            CustomSecureField(text: $password, placeholder: Text("Password"))
-                                .frame(width: getRect().width, height: 30)
-                                .foregroundColor(Color.matrixGreen)
-
                             Button {
-                                //
+                                AlertHelper.alertMessage(title: "In Progress...", message: "") { _ in
+                                    //
+                                }
                             } label: {
                                 Text("Enter The Hub")
                                     .foregroundColor(Color.matrixGreen)
@@ -90,6 +87,17 @@ struct LoginScreen: View {
                             .background(Color.init(hexString: "202020"))
                             .offset(y:-10)
                         HStack {
+                            Button {
+                                withAnimation {
+                                    viewRouter.currentPage = .surpriseScreen
+                                }
+                            } label: {
+                                Text("Go Back")
+                                    .foregroundColor(Color.matrixGreen)
+                                    .font(.system(size: 20, weight: .bold, design: .monospaced))
+                            }
+                            Spacer()
+                                .frame(maxWidth: 50)
                             Button {
                                 withAnimation {
                                     viewRouter.currentPage = .mainScreen

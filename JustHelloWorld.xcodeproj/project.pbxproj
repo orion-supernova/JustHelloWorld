@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */; };
 		5436EA8927B598350034AC04 /* SurpriseScreenHelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */; };
-		5436EA8B27B641BE0034AC04 /* matrixAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */; };
 		5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */; };
 		5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */; };
 		5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9027B6446B0034AC04 /* LoginScreen.swift */; };
 		5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9227B65B320034AC04 /* CustomTextField.swift */; };
 		5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5436EA9427B65FA70034AC04 /* CustomSecureField.swift */; };
 		5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458C4E327B30AFF008FA00C /* AlertHelper.swift */; };
+		546A77D327D524280078F986 /* MatrixRainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546A77D227D524280078F986 /* MatrixRainView.swift */; };
 		54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */; };
 		54AF657B27B1953300D118D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF657A27B1953300D118D2 /* ContentView.swift */; };
 		54AF657D27B1953400D118D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AF657C27B1953400D118D2 /* Assets.xcassets */; };
@@ -31,18 +31,24 @@
 		54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */; };
 		54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */; };
 		54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */; };
+		54EEB74F27DCC4EF00E3381E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB74E27DCC4EF00E3381E /* FirebaseAuth */; };
+		54EEB75127DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB75027DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta */; };
+		54EEB75327DCC4EF00E3381E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB75227DCC4EF00E3381E /* FirebaseMessaging */; };
+		54EEB75527DCC4EF00E3381E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB75427DCC4EF00E3381E /* FirebaseStorage */; };
+		54EEB75727DCC50500E3381E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54EEB75627DCC50400E3381E /* GoogleService-Info.plist */; };
+		54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB75827DCC6BE00E3381E /* AppGlobal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5436EA8627B5959E0034AC04 /* SideMenuForSurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuForSurpriseScreen.swift; sourceTree = "<group>"; };
 		5436EA8827B598350034AC04 /* SurpriseScreenHelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreenHelloWorldView.swift; sourceTree = "<group>"; };
-		5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = matrixAnimation.mp4; sourceTree = "<group>"; };
 		5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerHelper.swift; sourceTree = "<group>"; };
 		5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixVideoScreen.swift; sourceTree = "<group>"; };
 		5436EA9027B6446B0034AC04 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		5436EA9227B65B320034AC04 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		5436EA9427B65FA70034AC04 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		5458C4E327B30AFF008FA00C /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		546A77D227D524280078F986 /* MatrixRainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRainView.swift; sourceTree = "<group>"; };
 		54AF657527B1953300D118D2 /* JustHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHelloWorldApp.swift; sourceTree = "<group>"; };
 		54AF657A27B1953300D118D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		54AF65BE27B2F2CA00D118D2 /* BlackAndWhiteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWhiteColors.swift; sourceTree = "<group>"; };
 		54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseScreen.swift; sourceTree = "<group>"; };
 		54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		54EEB75627DCC50400E3381E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54EEB75827DCC6BE00E3381E /* AppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EEB75327DCC4EF00E3381E /* FirebaseMessaging in Frameworks */,
+				54EEB75527DCC4EF00E3381E /* FirebaseStorage in Frameworks */,
+				54EEB74F27DCC4EF00E3381E /* FirebaseAuth in Frameworks */,
+				54EEB75127DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				54AF658627B1980E00D118D2 /* Info.plist */,
+				54EEB75627DCC50400E3381E /* GoogleService-Info.plist */,
 				54AF657C27B1953400D118D2 /* Assets.xcassets */,
-				5436EA8A27B641BE0034AC04 /* matrixAnimation.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				54AF657827B1953300D118D2 /* JustHelloWorldApp.swift */,
+				54EEB75827DCC6BE00E3381E /* AppGlobal.swift */,
 			);
 			path = Appfiles;
 			sourceTree = "<group>";
@@ -177,6 +190,7 @@
 				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
 				5436EA8527B5957C0034AC04 /* Inside Surprise Screen */,
 				5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */,
+				546A77D227D524280078F986 /* MatrixRainView.swift */,
 				5436EA9027B6446B0034AC04 /* LoginScreen.swift */,
 			);
 			path = Main;
@@ -225,6 +239,12 @@
 			dependencies = (
 			);
 			name = JustHelloWorld;
+			packageProductDependencies = (
+				54EEB74E27DCC4EF00E3381E /* FirebaseAuth */,
+				54EEB75027DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta */,
+				54EEB75227DCC4EF00E3381E /* FirebaseMessaging */,
+				54EEB75427DCC4EF00E3381E /* FirebaseStorage */,
+			);
 			productName = JustHelloWorld;
 			productReference = 54AF657527B1953300D118D2 /* JustHelloWorld.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 54AF656C27B1953300D118D2;
+			packageReferences = (
+				54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 54AF657627B1953300D118D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5436EA8B27B641BE0034AC04 /* matrixAnimation.mp4 in Resources */,
 				54AF658027B1953400D118D2 /* Preview Assets.xcassets in Resources */,
 				54AF657D27B1953400D118D2 /* Assets.xcassets in Resources */,
+				54EEB75727DCC50500E3381E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +316,12 @@
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
+				54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */,
 				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */,
+				546A77D327D524280078F986 /* MatrixRainView.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
 				54AF65BA27B275FE00D118D2 /* ViewModel.swift in Sources */,
@@ -429,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"JustHelloWorld/Preview Content\"";
 				DEVELOPMENT_TEAM = 37TC2VKVJ6;
 				ENABLE_PREVIEWS = YES;
@@ -440,12 +465,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -460,7 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"JustHelloWorld/Preview Content\"";
 				DEVELOPMENT_TEAM = 37TC2VKVJ6;
 				ENABLE_PREVIEWS = YES;
@@ -471,12 +496,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -507,6 +532,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54EEB74E27DCC4EF00E3381E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		54EEB75027DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		54EEB75227DCC4EF00E3381E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		54EEB75427DCC4EF00E3381E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54AF656D27B1953300D118D2 /* Project object */;
 }
