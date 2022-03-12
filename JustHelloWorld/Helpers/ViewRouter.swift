@@ -21,4 +21,12 @@ enum Page {
     case rabbitHoleHub
     case quizGame
     case terminalChat
+    case tictactoe(TicTacToePage)
+}
+
+enum TicTacToePage {
+    case modeScreen
+    case easyMode
+    case mediumMode
+    case hardMode
 }

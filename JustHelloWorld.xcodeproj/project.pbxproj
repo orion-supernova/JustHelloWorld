@@ -52,6 +52,15 @@
 		54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78327DD2A2900E3381E /* ProgressBar.swift */; };
 		54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78727DD2A5000E3381E /* Trivia.swift */; };
 		54EEB78A27DD2A6200E3381E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78927DD2A6200E3381E /* Answer.swift */; };
+		54EEB78C27DD386F00E3381E /* TicTacToeAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78B27DD386F00E3381E /* TicTacToeAlerts.swift */; };
+		54EEB79027DD38D000E3381E /* GameViewEasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78F27DD38D000E3381E /* GameViewEasy.swift */; };
+		54EEB79227DD38E200E3381E /* GameViewMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79127DD38E200E3381E /* GameViewMedium.swift */; };
+		54EEB79427DD38FD00E3381E /* GameViewHard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79327DD38FD00E3381E /* GameViewHard.swift */; };
+		54EEB79A27DD395A00E3381E /* ChooseGameModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79927DD395A00E3381E /* ChooseGameModeView.swift */; };
+		54EEB79C27DD39CB00E3381E /* TicTacToeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79B27DD39CB00E3381E /* TicTacToeContentView.swift */; };
+		54EEB79E27DD3B3900E3381E /* GameViewModelEasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79D27DD3B3900E3381E /* GameViewModelEasy.swift */; };
+		54EEB7A027DD3B5C00E3381E /* GameViewModelMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79F27DD3B5C00E3381E /* GameViewModelMedium.swift */; };
+		54EEB7A227DD3B8800E3381E /* GameViewModelHard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB7A127DD3B8800E3381E /* GameViewModelHard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +106,15 @@
 		54EEB78327DD2A2900E3381E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		54EEB78727DD2A5000E3381E /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 		54EEB78927DD2A6200E3381E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		54EEB78B27DD386F00E3381E /* TicTacToeAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeAlerts.swift; sourceTree = "<group>"; };
+		54EEB78F27DD38D000E3381E /* GameViewEasy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewEasy.swift; sourceTree = "<group>"; };
+		54EEB79127DD38E200E3381E /* GameViewMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewMedium.swift; sourceTree = "<group>"; };
+		54EEB79327DD38FD00E3381E /* GameViewHard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewHard.swift; sourceTree = "<group>"; };
+		54EEB79927DD395A00E3381E /* ChooseGameModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameModeView.swift; sourceTree = "<group>"; };
+		54EEB79B27DD39CB00E3381E /* TicTacToeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeContentView.swift; sourceTree = "<group>"; };
+		54EEB79D27DD3B3900E3381E /* GameViewModelEasy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelEasy.swift; sourceTree = "<group>"; };
+		54EEB79F27DD3B5C00E3381E /* GameViewModelMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelMedium.swift; sourceTree = "<group>"; };
+		54EEB7A127DD3B8800E3381E /* GameViewModelHard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelHard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +342,8 @@
 		54EEB77427DD289300E3381E /* Tic Tac Toe */ = {
 			isa = PBXGroup;
 			children = (
+				54EEB78D27DD387800E3381E /* Model */,
+				54EEB78E27DD389200E3381E /* Views */,
 			);
 			path = "Tic Tac Toe";
 			sourceTree = "<group>";
@@ -361,6 +381,61 @@
 				54EEB78927DD2A6200E3381E /* Answer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		54EEB78D27DD387800E3381E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB78B27DD386F00E3381E /* TicTacToeAlerts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54EEB78E27DD389200E3381E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB79827DD393C00E3381E /* Main */,
+				54EEB79527DD391200E3381E /* GameViewEasy */,
+				54EEB79627DD391C00E3381E /* GameViewMedium */,
+				54EEB79727DD392500E3381E /* GameViewHard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54EEB79527DD391200E3381E /* GameViewEasy */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB78F27DD38D000E3381E /* GameViewEasy.swift */,
+				54EEB79D27DD3B3900E3381E /* GameViewModelEasy.swift */,
+			);
+			path = GameViewEasy;
+			sourceTree = "<group>";
+		};
+		54EEB79627DD391C00E3381E /* GameViewMedium */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB79127DD38E200E3381E /* GameViewMedium.swift */,
+				54EEB79F27DD3B5C00E3381E /* GameViewModelMedium.swift */,
+			);
+			path = GameViewMedium;
+			sourceTree = "<group>";
+		};
+		54EEB79727DD392500E3381E /* GameViewHard */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB79327DD38FD00E3381E /* GameViewHard.swift */,
+				54EEB7A127DD3B8800E3381E /* GameViewModelHard.swift */,
+			);
+			path = GameViewHard;
+			sourceTree = "<group>";
+		};
+		54EEB79827DD393C00E3381E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB79927DD395A00E3381E /* ChooseGameModeView.swift */,
+				54EEB79B27DD39CB00E3381E /* TicTacToeContentView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,31 +522,40 @@
 			files = (
 				5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */,
 				54EEB75C27DCCD6000E3381E /* AuthManager.swift in Sources */,
+				54EEB79C27DD39CB00E3381E /* TicTacToeContentView.swift in Sources */,
 				54EEB77927DD293A00E3381E /* QuizGame.swift in Sources */,
 				54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */,
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
+				54EEB79227DD38E200E3381E /* GameViewMedium.swift in Sources */,
 				54EEB75E27DCCD7800E3381E /* SensitiveData.swift in Sources */,
+				54EEB7A027DD3B5C00E3381E /* GameViewModelMedium.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
 				54EEB76E27DD244400E3381E /* TerminalChat.swift in Sources */,
 				5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */,
+				54EEB78C27DD386F00E3381E /* TicTacToeAlerts.swift in Sources */,
+				54EEB79E27DD3B3900E3381E /* GameViewModelEasy.swift in Sources */,
 				5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
 				54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */,
 				5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */,
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
+				54EEB79427DD38FD00E3381E /* GameViewHard.swift in Sources */,
 				54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
 				54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */,
 				54EEB76527DCCF1B00E3381E /* LoaderView.swift in Sources */,
 				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,
 				54EEB78227DD2A1A00E3381E /* AnswerRow.swift in Sources */,
+				54EEB79A27DD395A00E3381E /* ChooseGameModeView.swift in Sources */,
 				54EEB77727DD28DD00E3381E /* TriviaManager.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */,
+				54EEB79027DD38D000E3381E /* GameViewEasy.swift in Sources */,
+				54EEB7A227DD3B8800E3381E /* GameViewModelHard.swift in Sources */,
 				54EEB76B27DCDF8300E3381E /* RabbitHoleHub.swift in Sources */,
 				54EEB77D27DD295900E3381E /* QuestionView.swift in Sources */,
 				546A77D327D524280078F986 /* MatrixRainView.swift in Sources */,
