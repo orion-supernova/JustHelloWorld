@@ -30,6 +30,14 @@ struct ContentView: View {
             QuizGame()
         case .terminalChat:
             TerminalChat()
+        case .tictactoe(.modeScreen):
+            ChooseModeView()
+        case .tictactoe(.easyMode):
+            GameViewEasy()
+        case .tictactoe(.mediumMode):
+            GameViewMedium()
+        case .tictactoe(.hardMode):
+            GameViewHard()
         }
     }
 }

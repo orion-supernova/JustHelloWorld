@@ -48,7 +48,7 @@ struct RabbitHoleHub: View {
                     HStack {
                         Spacer()
                         Button {
-                            //
+                            viewRouter.currentPage = .tictactoe(.modeScreen)
                         } label: {
                             Image(systemName: "square.grid.3x3.topright.filled")
                                 .resizable()
