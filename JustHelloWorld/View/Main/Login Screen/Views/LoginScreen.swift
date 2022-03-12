@@ -15,11 +15,16 @@ struct LoginScreen: View {
     @State private var showLogin = false
 
     @EnvironmentObject var viewRouter: ViewRouter
+    @State var isLoading = false
     @ObservedObject var keyboardResponder = KeyboardResponder()
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
+
+            if isLoading {
+               LoaderView()
+            }
 
             VStack {
                 Spacer()
@@ -33,7 +38,7 @@ struct LoginScreen: View {
 
                 }
                 .onAppear {
-                    let text = "If you take the exit, story ends. If you stay here and login, you should figure out the rest."
+                    let text = "If you take the exit, story ends. If you stay here and enter, you should figure out the rest."
                     var charArray = [String]()
                     var target = 0
                     var count = 0
@@ -62,23 +67,52 @@ struct LoginScreen: View {
                             .scaledToFill()
                             .frame(maxHeight: 200)
                         VStack(spacing: 20) {
-                            // MARK: - Email Field
-                            CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
-                                .frame(width: getRect().width, height: 30)
-                                .foregroundColor(Color.matrixGreen)
-
-                            Button {
-                                AlertHelper.alertMessage(title: "In Progress...", message: "") { _ in
-                                    //
-                                }
-                            } label: {
-                                Text("Enter The Hub")
+                            if AppGlobal.shared.userID != nil {
+                                Text("You've already logged in")
                                     .foregroundColor(Color.matrixGreen)
                                     .padding(10)
-                                    .border(Color.init(hexString: "202020"), width: 1)
                                     .cornerRadius(2)
-                            }
+                                Button {
+                                    viewRouter.currentPage = .matrixRainView
+                                } label: {
+                                    Text("Enter the Rabbit Hole")
+                                        .foregroundColor(Color.matrixGreen)
+                                        .padding(10)
+                                        .border(Color.init(hexString: "202020"), width: 1)
+                                        .cornerRadius(2)
+                                }
 
+                            } else {
+                                // MARK: - Email Field
+                                CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
+                                    .frame(width: getRect().width, height: 30)
+                                    .foregroundColor(Color.matrixGreen)
+
+                                // MARK: - Password Field
+                                CustomSecureField(text: $password, placeholder: Text("Password "))
+                                    .frame(width: getRect().width, height: 30)
+                                    .foregroundColor(Color.matrixGreen)
+
+                                Button {
+                                    if email == "" || password == "" {
+                                        AlertHelper.basicAlertMessage(title: "Empty Field", message: "You can't enter without your credentials...")
+                                        return
+                                    }
+                                    isLoading = true
+                                    AuthManager.shared.startAuth(email: email, password: password) { success in
+                                        self.isLoading = false
+                                        if success {
+                                            viewRouter.currentPage = .matrixRainView
+                                        }
+                                    }
+                                } label: {
+                                    Text("Enter The Rabbit Hole")
+                                        .foregroundColor(Color.matrixGreen)
+                                        .padding(10)
+                                        .border(Color.init(hexString: "202020"), width: 1)
+                                        .cornerRadius(2)
+                                }
+                            }
                         }
                         .offset(y: -60)
                         Spacer()

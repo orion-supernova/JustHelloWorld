@@ -2,3 +2,5 @@
 *.xcbkptlist
 
 JustHelloWorld/Resources/GoogleService-Info.plist
+
+JustHelloWorld/View/Main/Login Screen/Logic Files/SensitiveData.swift

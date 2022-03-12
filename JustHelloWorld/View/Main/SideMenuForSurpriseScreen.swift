@@ -33,7 +33,7 @@ struct SideMenuForSurpriseScreen: View {
                 }
                 Button {
                     withAnimation {
-                        viewRouter.currentPage = .matrixRainView
+                        viewRouter.currentPage = .loginScreen
                     }
                 } label: {
                     Text("More!")

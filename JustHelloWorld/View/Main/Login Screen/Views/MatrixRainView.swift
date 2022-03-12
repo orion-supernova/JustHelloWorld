@@ -22,9 +22,9 @@ struct MatrixRainView: View {
             .padding(.horizontal)
         }
         .onAppear(perform: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                 withAnimation(.spring(response: 1, dampingFraction: 1, blendDuration: 1)) {
-                    viewRouter.currentPage = .chatScreen
+                    viewRouter.currentPage = .rabbitHoleHub
                 }
             }
         })

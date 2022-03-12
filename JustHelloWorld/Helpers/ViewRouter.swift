@@ -17,5 +17,8 @@ enum Page {
     case surpriseScreen
     case matrixVideoScreen
     case matrixRainView
-    case chatScreen
+    case loginScreen
+    case rabbitHoleHub
+    case quizGame
+    case terminalChat
 }

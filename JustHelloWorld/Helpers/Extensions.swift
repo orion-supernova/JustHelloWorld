@@ -83,6 +83,11 @@ extension Text {
         myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSRange(location: locationNumber,length: length))
         return myMutableString
     }
+    func greenTitle() -> some View {
+        self.font(.title)
+            .fontWeight(.heavy)
+            .foregroundColor(Color.matrixGreen)
+    }
 }
 // MARK: - UIApplication
 extension UIApplication {

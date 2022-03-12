@@ -37,6 +37,22 @@
 		54EEB75527DCC4EF00E3381E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB75427DCC4EF00E3381E /* FirebaseStorage */; };
 		54EEB75727DCC50500E3381E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54EEB75627DCC50400E3381E /* GoogleService-Info.plist */; };
 		54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB75827DCC6BE00E3381E /* AppGlobal.swift */; };
+		54EEB75C27DCCD6000E3381E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB75B27DCCD6000E3381E /* AuthManager.swift */; };
+		54EEB75E27DCCD7800E3381E /* SensitiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB75D27DCCD7800E3381E /* SensitiveData.swift */; };
+		54EEB76327DCCE7D00E3381E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 54EEB76227DCCE7D00E3381E /* Lottie */; };
+		54EEB76527DCCF1B00E3381E /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB76427DCCF1B00E3381E /* LoaderView.swift */; };
+		54EEB76927DCD0BD00E3381E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB76827DCD0BD00E3381E /* Constants.swift */; };
+		54EEB76B27DCDF8300E3381E /* RabbitHoleHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB76A27DCDF8300E3381E /* RabbitHoleHub.swift */; };
+		54EEB76E27DD244400E3381E /* TerminalChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB76D27DD244400E3381E /* TerminalChat.swift */; };
+		54EEB77727DD28DD00E3381E /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB77627DD28DD00E3381E /* TriviaManager.swift */; };
+		54EEB77927DD293A00E3381E /* QuizGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB77827DD293A00E3381E /* QuizGame.swift */; };
+		54EEB77B27DD294C00E3381E /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB77A27DD294C00E3381E /* TriviaView.swift */; };
+		54EEB77D27DD295900E3381E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB77C27DD295900E3381E /* QuestionView.swift */; };
+		54EEB78227DD2A1A00E3381E /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78127DD2A1A00E3381E /* AnswerRow.swift */; };
+		54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78327DD2A2900E3381E /* ProgressBar.swift */; };
+		54EEB78627DD2A3900E3381E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78527DD2A3900E3381E /* PrimaryButton.swift */; };
+		54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78727DD2A5000E3381E /* Trivia.swift */; };
+		54EEB78A27DD2A6200E3381E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78927DD2A6200E3381E /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +84,21 @@
 		54E277AC27B55CB900FEAFBD /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		54EEB75627DCC50400E3381E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54EEB75827DCC6BE00E3381E /* AppGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobal.swift; sourceTree = "<group>"; };
+		54EEB75B27DCCD6000E3381E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		54EEB75D27DCCD7800E3381E /* SensitiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveData.swift; sourceTree = "<group>"; };
+		54EEB76427DCCF1B00E3381E /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		54EEB76827DCD0BD00E3381E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		54EEB76A27DCDF8300E3381E /* RabbitHoleHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitHoleHub.swift; sourceTree = "<group>"; };
+		54EEB76D27DD244400E3381E /* TerminalChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalChat.swift; sourceTree = "<group>"; };
+		54EEB77627DD28DD00E3381E /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
+		54EEB77827DD293A00E3381E /* QuizGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGame.swift; sourceTree = "<group>"; };
+		54EEB77A27DD294C00E3381E /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		54EEB77C27DD295900E3381E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		54EEB78127DD2A1A00E3381E /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		54EEB78327DD2A2900E3381E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		54EEB78527DD2A3900E3381E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		54EEB78727DD2A5000E3381E /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		54EEB78927DD2A6200E3381E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EEB76327DCCE7D00E3381E /* Lottie in Frameworks */,
 				54EEB75327DCC4EF00E3381E /* FirebaseMessaging in Frameworks */,
 				54EEB75527DCC4EF00E3381E /* FirebaseStorage in Frameworks */,
 				54EEB74F27DCC4EF00E3381E /* FirebaseAuth in Frameworks */,
@@ -146,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				54E277A727B5598100FEAFBD /* Main */,
+				54EEB76C27DCF13300E3381E /* Rabbit Hole Hub */,
+				54EEB77427DD289300E3381E /* Tic Tac Toe */,
+				54EEB77527DD28A200E3381E /* Wordle */,
 				54E277AE27B55CC000FEAFBD /* Components */,
 			);
 			path = View;
@@ -167,6 +202,8 @@
 				54AF658727B19F2C00D118D2 /* ViewRouter.swift */,
 				5458C4E327B30AFF008FA00C /* AlertHelper.swift */,
 				5436EA8C27B642640034AC04 /* AVPlayerHelper.swift */,
+				54EEB76427DCCF1B00E3381E /* LoaderView.swift */,
+				54EEB76827DCD0BD00E3381E /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,8 +227,7 @@
 				54E277AA27B559EF00FEAFBD /* SurpriseScreen.swift */,
 				5436EA8527B5957C0034AC04 /* Inside Surprise Screen */,
 				5436EA8E27B6438D0034AC04 /* MatrixVideoScreen.swift */,
-				546A77D227D524280078F986 /* MatrixRainView.swift */,
-				5436EA9027B6446B0034AC04 /* LoginScreen.swift */,
+				54EEB75A27DCCD3D00E3381E /* Login Screen */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -223,6 +259,113 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		54EEB75A27DCCD3D00E3381E /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB76727DCCF7F00E3381E /* Views */,
+				54EEB76627DCCF6F00E3381E /* Logic Files */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		54EEB76627DCCF6F00E3381E /* Logic Files */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB75B27DCCD6000E3381E /* AuthManager.swift */,
+				54EEB75D27DCCD7800E3381E /* SensitiveData.swift */,
+			);
+			path = "Logic Files";
+			sourceTree = "<group>";
+		};
+		54EEB76727DCCF7F00E3381E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				546A77D227D524280078F986 /* MatrixRainView.swift */,
+				5436EA9027B6446B0034AC04 /* LoginScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54EEB76C27DCF13300E3381E /* Rabbit Hole Hub */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB77327DD25BF00E3381E /* Main */,
+				54EEB77127DD25AE00E3381E /* QuizGame */,
+				54EEB77227DD25B400E3381E /* TerminalChat */,
+			);
+			path = "Rabbit Hole Hub";
+			sourceTree = "<group>";
+		};
+		54EEB77127DD25AE00E3381E /* QuizGame */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB77627DD28DD00E3381E /* TriviaManager.swift */,
+				54EEB77E27DD29E100E3381E /* Views */,
+				54EEB77F27DD29FE00E3381E /* Components */,
+				54EEB78027DD2A0500E3381E /* Models */,
+			);
+			path = QuizGame;
+			sourceTree = "<group>";
+		};
+		54EEB77227DD25B400E3381E /* TerminalChat */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB76D27DD244400E3381E /* TerminalChat.swift */,
+			);
+			path = TerminalChat;
+			sourceTree = "<group>";
+		};
+		54EEB77327DD25BF00E3381E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB76A27DCDF8300E3381E /* RabbitHoleHub.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54EEB77427DD289300E3381E /* Tic Tac Toe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tic Tac Toe";
+			sourceTree = "<group>";
+		};
+		54EEB77527DD28A200E3381E /* Wordle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wordle;
+			sourceTree = "<group>";
+		};
+		54EEB77E27DD29E100E3381E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB77827DD293A00E3381E /* QuizGame.swift */,
+				54EEB77A27DD294C00E3381E /* TriviaView.swift */,
+				54EEB77C27DD295900E3381E /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54EEB77F27DD29FE00E3381E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB78127DD2A1A00E3381E /* AnswerRow.swift */,
+				54EEB78327DD2A2900E3381E /* ProgressBar.swift */,
+				54EEB78527DD2A3900E3381E /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		54EEB78027DD2A0500E3381E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54EEB78727DD2A5000E3381E /* Trivia.swift */,
+				54EEB78927DD2A6200E3381E /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +387,7 @@
 				54EEB75027DCC4EF00E3381E /* FirebaseFirestoreSwift-Beta */,
 				54EEB75227DCC4EF00E3381E /* FirebaseMessaging */,
 				54EEB75427DCC4EF00E3381E /* FirebaseStorage */,
+				54EEB76227DCCE7D00E3381E /* Lottie */,
 			);
 			productName = JustHelloWorld;
 			productReference = 54AF657527B1953300D118D2 /* JustHelloWorld.app */;
@@ -275,6 +419,7 @@
 			mainGroup = 54AF656C27B1953300D118D2;
 			packageReferences = (
 				54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				54EEB76127DCCE7D00E3381E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 54AF657627B1953300D118D2 /* Products */;
 			projectDirPath = "";
@@ -304,28 +449,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				5458C4E427B30AFF008FA00C /* AlertHelper.swift in Sources */,
+				54EEB75C27DCCD6000E3381E /* AuthManager.swift in Sources */,
+				54EEB77927DD293A00E3381E /* QuizGame.swift in Sources */,
 				54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */,
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
+				54EEB75E27DCCD7800E3381E /* SensitiveData.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
+				54EEB76E27DD244400E3381E /* TerminalChat.swift in Sources */,
 				5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */,
 				5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
+				54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */,
 				5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */,
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
+				54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
+				54EEB78627DD2A3900E3381E /* PrimaryButton.swift in Sources */,
 				54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */,
+				54EEB76527DCCF1B00E3381E /* LoaderView.swift in Sources */,
 				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,
+				54EEB78227DD2A1A00E3381E /* AnswerRow.swift in Sources */,
+				54EEB77727DD28DD00E3381E /* TriviaManager.swift in Sources */,
 				54AF657927B1953300D118D2 /* JustHelloWorldApp.swift in Sources */,
 				54AF65BD27B2DE5900D118D2 /* HelloWorldText.swift in Sources */,
 				5436EA8D27B642640034AC04 /* AVPlayerHelper.swift in Sources */,
+				54EEB76B27DCDF8300E3381E /* RabbitHoleHub.swift in Sources */,
+				54EEB77D27DD295900E3381E /* QuestionView.swift in Sources */,
 				546A77D327D524280078F986 /* MatrixRainView.swift in Sources */,
 				54AF65B827B1B37600D118D2 /* HelloWorldView.swift in Sources */,
+				54EEB77B27DD294C00E3381E /* TriviaView.swift in Sources */,
+				54EEB78A27DD2A6200E3381E /* Answer.swift in Sources */,
 				54AF658E27B19FD900D118D2 /* LaunchScreen.swift in Sources */,
 				54AF65BA27B275FE00D118D2 /* ViewModel.swift in Sources */,
 				5436EA8927B598350034AC04 /* SurpriseScreenHelloWorldView.swift in Sources */,
+				54EEB76927DCD0BD00E3381E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +702,14 @@
 				kind = branch;
 			};
 		};
+		54EEB76127DCCE7D00E3381E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -564,6 +732,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 54EEB74D27DCC4EF00E3381E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		54EEB76227DCCE7D00E3381E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EEB76127DCCE7D00E3381E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

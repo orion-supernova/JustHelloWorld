@@ -22,8 +22,14 @@ struct ContentView: View {
             MatrixVideoScreen()
         case .matrixRainView:
             MatrixRainView()
-        case .chatScreen:
+        case .loginScreen:
             LoginScreen()
+        case .rabbitHoleHub:
+            RabbitHoleHub()
+        case .quizGame:
+            QuizGame()
+        case .terminalChat:
+            TerminalChat()
         }
     }
 }

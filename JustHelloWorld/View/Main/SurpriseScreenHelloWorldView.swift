@@ -63,7 +63,7 @@ struct SurpriseScreenHelloWorldView: View {
                                             fontSize = getRect().width == getSmallDeviceWidth() ? 16 : 20
                                             isTexOnTheLeft = true
                                             lineLimit = 3
-                                            let text = "Welcome to the Rabbit Hole."
+                                            let text = "So you are looking for the Rabbit Hole, huh?"
                                             var charArray = [String]()
                                             for char in text {
                                                 target += 1
