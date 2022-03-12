@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TriviaView: View {
     @EnvironmentObject var triviaManager: TriviaManager
+    @EnvironmentObject var viewRouter: ViewRouter
 
     var body: some View {
         if triviaManager.reachedEnd {
@@ -20,18 +21,30 @@ struct TriviaView: View {
 
                 Text("You scored \(triviaManager.score) out of \(triviaManager.length)")
 
-                Button {
-                    Task.init {
-                        await triviaManager.fetchTrivia()
+                HStack {
+                    Button {
+                        Task.init {
+                            await triviaManager.fetchTrivia()
+                        }
+                    } label: {
+                        Text("Play Again")
+                            .padding(5)
+                            .border(Color.matrixGreen, width: 0.5)
                     }
-                } label: {
-                    PrimaryButton(text: "Play again")
+
+                    Button {
+                        viewRouter.currentPage = .rabbitHoleHub
+                    } label: {
+                        Text("Go Back to Hub")
+                            .padding(5)
+                            .border(Color.matrixGreen, width: 0.5)
+                    }
                 }
             }
-            .foregroundColor(Color.red)
+            .foregroundColor(Color.matrixGreen)
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(red: 0.984313725490196, green: 0.9294117647058824, blue: 0.8470588235294118))
+            .background(Color.black)
         } else {
             QuestionView()
                 .environmentObject(triviaManager)

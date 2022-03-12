@@ -50,7 +50,6 @@
 		54EEB77D27DD295900E3381E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB77C27DD295900E3381E /* QuestionView.swift */; };
 		54EEB78227DD2A1A00E3381E /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78127DD2A1A00E3381E /* AnswerRow.swift */; };
 		54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78327DD2A2900E3381E /* ProgressBar.swift */; };
-		54EEB78627DD2A3900E3381E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78527DD2A3900E3381E /* PrimaryButton.swift */; };
 		54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78727DD2A5000E3381E /* Trivia.swift */; };
 		54EEB78A27DD2A6200E3381E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB78927DD2A6200E3381E /* Answer.swift */; };
 /* End PBXBuildFile section */
@@ -96,7 +95,6 @@
 		54EEB77C27DD295900E3381E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		54EEB78127DD2A1A00E3381E /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		54EEB78327DD2A2900E3381E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		54EEB78527DD2A3900E3381E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		54EEB78727DD2A5000E3381E /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 		54EEB78927DD2A6200E3381E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -352,7 +350,6 @@
 			children = (
 				54EEB78127DD2A1A00E3381E /* AnswerRow.swift */,
 				54EEB78327DD2A2900E3381E /* ProgressBar.swift */,
-				54EEB78527DD2A3900E3381E /* PrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -467,7 +464,6 @@
 				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
 				54EEB78827DD2A5000E3381E /* Trivia.swift in Sources */,
 				54AF659027B19FDF00D118D2 /* MainScreen.swift in Sources */,
-				54EEB78627DD2A3900E3381E /* PrimaryButton.swift in Sources */,
 				54EEB75927DCC6BE00E3381E /* AppGlobal.swift in Sources */,
 				54EEB76527DCCF1B00E3381E /* LoaderView.swift in Sources */,
 				54E277AD27B55CB900FEAFBD /* CustomAlertView.swift in Sources */,

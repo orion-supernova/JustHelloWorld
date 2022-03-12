@@ -19,7 +19,7 @@ struct QuestionView: View {
                 Spacer()
 
                 Text("\(triviaManager.index + 1) out of \(triviaManager.length)")
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.matrixGreen)
                     .fontWeight(.heavy)
             }
 
@@ -40,7 +40,14 @@ struct QuestionView: View {
             Button {
                 triviaManager.goToNextQuestion()
             } label: {
-                PrimaryButton(text: "Next", background: triviaManager.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                Text("Next")
+                    .foregroundColor(triviaManager.answerSelected ? Color.matrixGreen : Color.black)
+                    .padding()
+                    .padding(.horizontal)
+                    .background(triviaManager.answerSelected ? Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327) : Color.black )
+                    .cornerRadius(30)
+                    .shadow(radius: 10)
+
             }
             .disabled(!triviaManager.answerSelected)
 
@@ -48,7 +55,7 @@ struct QuestionView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color(red: 0.984313725490196, green: 0.9294117647058824, blue: 0.8470588235294118))
+        .background(Color.black)
         .navigationBarHidden(true)
     }
 }

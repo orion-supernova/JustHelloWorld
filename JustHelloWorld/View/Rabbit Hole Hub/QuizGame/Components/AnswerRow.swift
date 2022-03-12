@@ -33,8 +33,8 @@ struct AnswerRow: View {
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .foregroundColor(triviaManager.answerSelected ? (isSelected ? Color("AccentColor") : .gray) : Color("AccentColor"))
-        .background(.white)
+        .foregroundColor(triviaManager.answerSelected ? (isSelected ? Color.matrixGreen : .gray) : Color.matrixGreen)
+        .background(.black.opacity(0.7))
         .cornerRadius(10)
         .shadow(color: isSelected ? answer.isCorrect ? green : red : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
