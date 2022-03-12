@@ -12,6 +12,9 @@ struct ChooseModeView: View {
 
     var body: some View {
         VStack(spacing: 30) {
+
+            Spacer()
+
             Text("Choose your game mode ↓ ")
                 .font(.system(size: 25, weight: .semibold))
                 .padding(.top, -100)
@@ -55,6 +58,17 @@ struct ChooseModeView: View {
                     .background(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
                     .clipShape(Capsule())
                     .padding()
+            })
+
+            Spacer()
+
+            Button(action: {
+                viewRouter.currentPage = .rabbitHoleHub
+            }, label: {
+                Text("Go Back")
+                    .padding(8)
+                    .foregroundColor(.matrixGreen)
+                    .border(Color.matrixGreen, width: 0.5)
             })
         }
     }

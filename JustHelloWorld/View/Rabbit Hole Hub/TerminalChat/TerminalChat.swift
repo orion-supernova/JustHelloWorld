@@ -17,6 +17,7 @@ struct TerminalChat: View {
                 VStack {
                     Spacer()
                         .frame(maxHeight: 10)
+                    // MARK: - Top Username View
                     HStack {
                         Button {
                             AlertHelper.textFieldAlert(title: "Enter your username", message: "") { str in
@@ -61,9 +62,12 @@ struct TerminalChat: View {
                     .border(Color.matrixGreen, width: 0.5)
 
                     Spacer()
-                        .frame(maxHeight: 10)
+                        .frame(maxHeight: 200)
 
-
+                    // MARK: - Main Content
+                    Text("In Progress...")
+                        .foregroundColor(Color.matrixGreen)
+                        .font(.system(size: 20, weight: .bold, design: .monospaced))
 
                     Spacer()
                 }

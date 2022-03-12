@@ -17,6 +17,8 @@ struct RabbitHoleHub: View {
                     .ignoresSafeArea()
 
                 VStack {
+                    Spacer()
+
                     HStack {
                         Spacer()
                         Button {
@@ -60,7 +62,7 @@ struct RabbitHoleHub: View {
                         Spacer()
 
                         Button {
-                            //
+                            AlertHelper.basicAlertMessage(title: "In Progress", message: "")
                         } label: {
                             Image(systemName: "abc")
                                 .resizable()
@@ -70,6 +72,19 @@ struct RabbitHoleHub: View {
                         }
                         Spacer()
                     }
+                    Spacer()
+
+                    Button {
+                        viewRouter.currentPage = .loginScreen
+                    } label: {
+                        Text("Go back")
+                            .padding(8)
+                            .foregroundColor(Color.matrixGreen)
+                            .border(Color.matrixGreen, width: 0.5)
+                    }
+
+                    Spacer()
+                        .frame(maxHeight: 20)
                 }
             }
 
