@@ -62,7 +62,7 @@ struct RabbitHoleHub: View {
                         Spacer()
 
                         Button {
-                            AlertHelper.basicAlertMessage(title: "In Progress", message: "")
+                            AlertHelper.basicAlertMessage(title: "Coming Soon...", message: "")
                         } label: {
                             Image(systemName: "abc")
                                 .resizable()

@@ -61,6 +61,9 @@
 		54EEB79E27DD3B3900E3381E /* GameViewModelEasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79D27DD3B3900E3381E /* GameViewModelEasy.swift */; };
 		54EEB7A027DD3B5C00E3381E /* GameViewModelMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB79F27DD3B5C00E3381E /* GameViewModelMedium.swift */; };
 		54EEB7A227DD3B8800E3381E /* GameViewModelHard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB7A127DD3B8800E3381E /* GameViewModelHard.swift */; };
+		54EEB7A827DE7CBE00E3381E /* TerminalChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB7A727DE7CBE00E3381E /* TerminalChatViewModel.swift */; };
+		54EEB7AA27DE834F00E3381E /* TerminalChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB7A927DE834F00E3381E /* TerminalChatCell.swift */; };
+		54EEB7AC27DE87B600E3381E /* KeyboardInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EEB7AB27DE87B600E3381E /* KeyboardInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,10 @@
 		54EEB79D27DD3B3900E3381E /* GameViewModelEasy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelEasy.swift; sourceTree = "<group>"; };
 		54EEB79F27DD3B5C00E3381E /* GameViewModelMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelMedium.swift; sourceTree = "<group>"; };
 		54EEB7A127DD3B8800E3381E /* GameViewModelHard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelHard.swift; sourceTree = "<group>"; };
+		54EEB7A627DD530900E3381E /* JustHelloWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustHelloWorld.entitlements; sourceTree = "<group>"; };
+		54EEB7A727DE7CBE00E3381E /* TerminalChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalChatViewModel.swift; sourceTree = "<group>"; };
+		54EEB7A927DE834F00E3381E /* TerminalChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalChatCell.swift; sourceTree = "<group>"; };
+		54EEB7AB27DE87B600E3381E /* KeyboardInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +168,7 @@
 		54AF657727B1953300D118D2 /* JustHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				54EEB7A627DD530900E3381E /* JustHelloWorld.entitlements */,
 				54AF658927B19FA100D118D2 /* Resources */,
 				54AF65BB27B2DE3B00D118D2 /* Model */,
 				54AF658A27B19FAB00D118D2 /* View */,
@@ -327,6 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				54EEB76D27DD244400E3381E /* TerminalChat.swift */,
+				54EEB7A927DE834F00E3381E /* TerminalChatCell.swift */,
+				54EEB7AB27DE87B600E3381E /* KeyboardInputView.swift */,
+				54EEB7A727DE7CBE00E3381E /* TerminalChatViewModel.swift */,
 			);
 			path = TerminalChat;
 			sourceTree = "<group>";
@@ -527,11 +538,13 @@
 				54AF65BF27B2F2CA00D118D2 /* BlackAndWhiteColors.swift in Sources */,
 				54AF658827B19F2C00D118D2 /* ViewRouter.swift in Sources */,
 				54EEB79227DD38E200E3381E /* GameViewMedium.swift in Sources */,
+				54EEB7A827DE7CBE00E3381E /* TerminalChatViewModel.swift in Sources */,
 				54EEB75E27DCCD7800E3381E /* SensitiveData.swift in Sources */,
 				54EEB7A027DD3B5C00E3381E /* GameViewModelMedium.swift in Sources */,
 				54AF659227B1A88D00D118D2 /* Extensions.swift in Sources */,
 				54EEB76E27DD244400E3381E /* TerminalChat.swift in Sources */,
 				5436EA9327B65B320034AC04 /* CustomTextField.swift in Sources */,
+				54EEB7AA27DE834F00E3381E /* TerminalChatCell.swift in Sources */,
 				54AF657B27B1953300D118D2 /* ContentView.swift in Sources */,
 				5436EA8727B5959E0034AC04 /* SideMenuForSurpriseScreen.swift in Sources */,
 				54EEB78C27DD386F00E3381E /* TicTacToeAlerts.swift in Sources */,
@@ -539,6 +552,7 @@
 				5436EA9527B65FA70034AC04 /* CustomSecureField.swift in Sources */,
 				54AF659627B1B06900D118D2 /* SideMenu.swift in Sources */,
 				54EEB78427DD2A2900E3381E /* ProgressBar.swift in Sources */,
+				54EEB7AC27DE87B600E3381E /* KeyboardInputView.swift in Sources */,
 				5436EA8F27B6438D0034AC04 /* MatrixVideoScreen.swift in Sources */,
 				54E277AB27B559EF00FEAFBD /* SurpriseScreen.swift in Sources */,
 				5436EA9127B6446B0034AC04 /* LoginScreen.swift in Sources */,
@@ -693,8 +707,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustHelloWorld/JustHelloWorld.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"JustHelloWorld/Preview Content\"";
 				DEVELOPMENT_TEAM = 37TC2VKVJ6;
 				ENABLE_PREVIEWS = YES;
@@ -705,12 +720,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -724,8 +740,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustHelloWorld/JustHelloWorld.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"JustHelloWorld/Preview Content\"";
 				DEVELOPMENT_TEAM = 37TC2VKVJ6;
 				ENABLE_PREVIEWS = YES;
@@ -736,12 +753,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.walhallaa.JustHelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

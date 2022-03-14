@@ -98,6 +98,7 @@ struct LoginScreen: View {
                                         AlertHelper.basicAlertMessage(title: "Empty Field", message: "You can't enter without your credentials...")
                                         return
                                     }
+                                    UIApplication.shared.endEditing()
                                     isLoading = true
                                     AuthManager.shared.startAuth(email: email, password: password) { success in
                                         self.isLoading = false
